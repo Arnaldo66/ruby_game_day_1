@@ -1,6 +1,3 @@
-
-
-
 require_relative "player"
 
 def draw(nb_cols,nb_rows,player)
@@ -18,6 +15,11 @@ def draw(nb_cols,nb_rows,player)
 end
 
 player = Player.new(3,4,"P")
+
+draw 6, 5, player
+
+
+player.move(4,5)
 
 draw 6, 5, player
 # marche aussi si dernière variable est un hash draw 6, 5, x: 3, y: 4
