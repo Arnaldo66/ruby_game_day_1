@@ -1,10 +1,10 @@
 
 player_x = 3
-player_y = 4
+player = { :x => 3, :y => 4}
 
 for row in 1..5
 	for cols in 1..6
-		if row == player_y && cols == player_x
+		if row == player[:y] && cols == player[:x]
 			print "P"
 		else
 			print "."
