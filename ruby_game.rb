@@ -1,26 +1,7 @@
 
 
 
-class Player
-
-	def initialize(x,y,motif)
-		@x = x
-		@y = y
-		@motif = motif
-	end
-
-	def x
-		@x
-	end
-
-	def y
-		@y
-	end
-
-	def motif
-		@motif
-	end
-end
+require_relative "player"
 
 def draw(nb_cols,nb_rows,player)
 	(1..nb_rows).each do |row|
